@@ -96,6 +96,58 @@ const vampireData = require('./populateVampires')
 
 /////////////////////////////////////////////////
 // ## QUERYING
+
+// Vampire.find(
+//     {gender:"f"}, 
+//     (err, vampiresFound) => {
+//             if(err) {
+//                 console.log(err);
+//             }else {
+//                 console.log(vampiresFound);
+//             }
+//         })
+
+// Vampire.find(
+//     {victims: {$gt:500}},
+//     (err, vampiresFound) => {
+//         if(err) {
+//             console.log(err);
+//         }else {
+//             console.log(vampiresFound);
+//         }
+// })
+
+// Vampire.find(
+//     {victims: {$lte:150}},
+//     (err, vampiresFound) => {
+//         if(err) {
+//             console.log(err);
+//         }else {
+//             console.log(vampiresFound);
+//         }
+// })
+
+
+// Vampire.find(
+//     {victims: {$ne:210234}},
+//     (err, vampiresFound) => {
+//         if(err) {
+//             console.log(err);
+//         }else {
+//             console.log(vampiresFound);
+//         }
+// })
+
+
+// Vampire.find(
+//     {$and: [{victims: {$lt:500}},{victims: {$gt:150}}]},
+//     (err, vampiresFound) => {
+//         if(err) {
+//             console.log(err);
+//         }else {
+//             console.log(vampiresFound);
+//         }
+// })
 /////////////////////////////////////////////////
 // ### Select by comparison
 
